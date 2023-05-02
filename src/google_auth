@@ -1,0 +1,44 @@
+npm install @react-oauth/google@latest
+npm install jwt-decode
+
+
+on https://console.cloud.google.com/:
+sidebar-> more products->api and serv->credentials->configure concent screen->external
+then fill app name,email,dev email
+scopes,test user,and overview leave them empty
+back to dashboard
+go to credentials
+create cred->oauth clent id
+app type-> web app
+app name
+auth js origin and redirect url in both same two
+http://localhost
+http://localhost:3000
+
+you got clent id--save cleient id 
+id-231723265771-5revqoolgkrdn7tsepi6u98dq0qtdr0d.apps.googleusercontent.com
+secret-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
+
+
+
+# login buttom
+
+import { GoogleLogin } from "@react-oauth/google";
+import jwt_decode from "jwt-decode";
+
+const Login = () => {
+  return (
+    <GoogleLogin
+      onSuccess={(credentialResponse) => {
+        console.log(jwt_decode(credentialResponse.credential));
+      }}
+      onError={() => {
+        console.log("Login Failed");
+      }}
+    />
+  );
+};
+export default Login;
+
+
+
