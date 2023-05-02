@@ -13,7 +13,7 @@ input:focus {
   display: grid;
   place-items: center;
   /* background-color: #b3f8b7; */
-  background: url("./WhatsApp-Background-Wallpaper-72.jpg");
+  /* background: url("./WhatsApp-Background-Wallpaper-72.jpg"); */
   background: url("./Wallpaper-4k.jpg");
   background-size: contain;
   height: 100vh;
