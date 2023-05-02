@@ -7,28 +7,36 @@ import { useState } from "react";
 import Login from "./Login.js";
 import { useSelector } from "react-redux";
 
-function App() {
-  // const [user, setUser] = useState(null);
-  const { user } = useSelector((state) => state.userReducer);
-  console.log(user);
-  return (
-    <div className="app">
-      {!user ? (
-        // <Login />
-        <h1>home</h1>
-      ) : (
-        // <div className="app__body">
-        //   <BrowserRouter>
-        //     <Sidebar />
-        //     <Routes>
-        //       <Route path="/rooms/:roomId" element={<Chat />}></Route>
-        //     </Routes>
-        //   </BrowserRouter>
-        // </div>
-        <h1>hii</h1>
-      )}
-    </div>
-  );
-}
+// function App() {
+//   // const [user, setUser] = useState(null);
+//   const { user } = useSelector((state) => state.userReducer);
+//   console.log(user);
+//   return (
+//     <div className="app">
+//       {!user ? (
+//         // <Login />
+//         <h1>home</h1>
+//       ) : (
+//         // <div className="app__body">
+//         //   <BrowserRouter>
+//         //     <Sidebar />
+//         //     <Routes>
+//         //       <Route path="/rooms/:roomId" element={<Chat />}></Route>
+//         //     </Routes>
+//         //   </BrowserRouter>
+//         // </div>
+//         <h1>hii</h1>
+//       )}
+//     </div>
+//   );
+// }
+
+// export default App;
+
+import React from "react";
+
+const App = () => {
+  return <div>App</div>;
+};
 
 export default App;
