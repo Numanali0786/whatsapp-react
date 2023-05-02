@@ -14,16 +14,18 @@ function App() {
   return (
     <div className="app">
       {!user ? (
-        <Login />
+        // <Login />
+        <h1>home</h1>
       ) : (
-        <div className="app__body">
-          <BrowserRouter>
-            <Sidebar />
-            <Routes>
-              <Route path="/rooms/:roomId" element={<Chat />}></Route>
-            </Routes>
-          </BrowserRouter>
-        </div>
+        // <div className="app__body">
+        //   <BrowserRouter>
+        //     <Sidebar />
+        //     <Routes>
+        //       <Route path="/rooms/:roomId" element={<Chat />}></Route>
+        //     </Routes>
+        //   </BrowserRouter>
+        // </div>
+        <h1>hii</h1>
       )}
     </div>
   );
