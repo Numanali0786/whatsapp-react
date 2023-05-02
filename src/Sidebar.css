@@ -47,4 +47,15 @@
 .sidebar__chats {
   flex: 1;
   background-color: #f6f6f6;
+
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+.sidebar__chats::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+
+  padding-right: -10px;
 }
